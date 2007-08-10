@@ -40,6 +40,6 @@ rm -rf %{buildroot}
 %{_bindir}/xman
 %{_datadir}/X11/xman.help
 %{_datadir}/X11/app-defaults/Xman
-%{_mandir}/man1/xman.1x.bz2
+%{_mandir}/man1/xman.*
 
 
