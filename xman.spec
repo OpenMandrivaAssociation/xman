@@ -1,6 +1,6 @@
 Name: xman
-Version: 1.0.2
-Release: %mkrel 4
+Version: 1.0.3
+Release: %mkrel 1
 Summary: Manual page display program for the X Window System
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
