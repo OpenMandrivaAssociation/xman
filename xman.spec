@@ -10,7 +10,6 @@ Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.t
 Patch0: xman-1.0.2-bzip2_support.patch
 Patch1: xman-1.0.2-lzma_support.patch
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 # Not really required, but configure checks for /etc/man.config
 # to know if should or not use it.
