@@ -2,7 +2,7 @@
 
 Name: xman
 Version: 1.0.3
-Release: %mkrel 5
+Release: %mkrel 6
 Summary: Manual page display program for the X Window System
 Group: Development/X11
 License: MIT
