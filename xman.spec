@@ -29,20 +29,16 @@ Xman is a manual page display program for the X Window System.
 
 %prep
 %setup -q -n %{name}-%{version}
-
 %patch3 -p1
 %patch4 -p1
 
 %build
-autoreconf -ifs
-%configure2_5x	--x-includes=%{_includedir}\
+%configure2_5x \
 %if %{enable_xprint}
-		--enable-xprint\
+		--enable-xprint
 %else
-		--disable-xprint\
+		--disable-xprint
 %endif
-		--x-libraries=%{_libdir}
-
 %make
 
 %install
