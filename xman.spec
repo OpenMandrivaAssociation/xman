@@ -1,8 +1,8 @@
 %define	enable_xprint	0
 
 Name: xman
-Version: 1.0.3
-Release: %mkrel 7
+Version: 1.1.0
+Release: %mkrel 1
 Summary: Manual page display program for the X Window System
 Group: Development/X11
 License: MIT
@@ -21,16 +21,11 @@ BuildRequires: libxprintutil-devel >= 1.0.1
 %endif
 BuildRequires: x11-util-macros >= 1.0.1
 
-Patch3: 0003-Add-bzip2-manpage-extension-support.patch
-Patch4: 0004-Add-lzma-manpage-extension-support.patch
-
 %description
 Xman is a manual page display program for the X Window System.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch3 -p1
-%patch4 -p1
 
 %build
 %configure2_5x \
