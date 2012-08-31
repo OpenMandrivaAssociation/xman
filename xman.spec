@@ -2,7 +2,7 @@
 
 Name: xman
 Version: 1.1.2
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Manual page display program for the X Window System
 Group: Development/X11
 License: MIT
@@ -26,9 +26,12 @@ Xman is a manual page display program for the X Window System.
 
 %prep
 %setup -q -n %{name}-%{version}
+sed -i 's|lzma|xz|g' vendor.h
 
 %build
 %configure2_5x \
+		--with-sysmanpath=%{_mandir} \
+		--with-localmanpath=%{_mandir} \
 %if %{enable_xprint}
 		--enable-xprint
 %else
