@@ -14,7 +14,7 @@ BuildRoot: %{_tmppath}/%{name}-root
 # Not really required, but configure checks for /etc/man.config
 # to know if should or not use it.
 BuildRequires: man
-BuildRequires: libxaw-devel >= 1.0.1
+BuildRequires: pkgconfig(xaw7)
 %if %{enable_xprint}
 BuildRequires: libxprintutil-devel >= 1.0.1
 -BuildRequires: libxp-devel >= 1.0.0
