@@ -2,7 +2,7 @@
 
 Name: xman
 Version: 1.1.2
-Release: 5
+Release: 6
 Summary: Manual page display program for the X Window System
 Group: Development/X11
 License: MIT
