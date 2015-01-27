@@ -26,6 +26,7 @@ Xman is a manual page display program for the X Window System.
 %setup -q
 
 %build
+%global optflags %{optflags} -Wno-error -Wno-tautological-pointer-compare
 %configure \
 %if %{enable_xprint}
 		--enable-xprint
