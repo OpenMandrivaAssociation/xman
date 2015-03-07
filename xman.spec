@@ -1,7 +1,7 @@
 %define	enable_xprint 0
 
 Name: xman
-Version: 1.1.3
+Version: 1.1.4
 Release: 1
 Summary: Manual page display program for the X Window System
 Group: Development/X11
