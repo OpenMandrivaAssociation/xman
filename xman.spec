@@ -1,8 +1,8 @@
-%define	enable_xprint 0
+%define enable_xprint 0
 
 Name: xman
-Version: 1.1.4
-Release: 3
+Version: 1.1.5
+Release: 1
 Summary: Manual page display program for the X Window System
 Group: Development/X11
 License: MIT
@@ -23,7 +23,7 @@ BuildRequires: pkgconfig(xorg-macros) >= 1.0.1
 Xman is a manual page display program for the X Window System.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %global optflags %{optflags} -Wno-error -Wno-tautological-pointer-compare
@@ -33,10 +33,10 @@ Xman is a manual page display program for the X Window System.
 %else
 		--disable-xprint
 %endif
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xman
