@@ -1,13 +1,13 @@
 %define enable_xprint 0
 
 Name: xman
-Version: 1.1.5
-Release: 2
+Version: 1.1.6
+Release: 1
 Summary: Manual page display program for the X Window System
 Group: Development/X11
 License: MIT
 URL: http://xorg.freedesktop.org
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 
 # Not really required, but configure checks for /etc/man.config
 # to know if should or not use it.
@@ -42,4 +42,4 @@ Xman is a manual page display program for the X Window System.
 %{_bindir}/xman
 %{_datadir}/X11/xman.help
 %{_datadir}/X11/app-defaults/Xman
-%{_mandir}/man1/xman.*
+%doc %{_mandir}/man1/xman.*
